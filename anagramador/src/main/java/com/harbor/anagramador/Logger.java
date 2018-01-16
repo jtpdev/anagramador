@@ -16,14 +16,14 @@ public class Logger {
 	}
 
 	/**
-	 * This methods print in console the log that the user want to print.
+	 * This methods print in console the log that the developer want to print.
 	 * 
 	 * @param values
 	 */
 	public void show(String... values) {
 		if (doLog) {
 			for (String value : values) {
-				System.err.println(value);
+				System.err.println("Log_" + System.currentTimeMillis() + ".:" + value);
 			}
 		}
 	}
@@ -50,6 +50,9 @@ public class Logger {
 		counter = !counter;
 	}
 
+	/**
+	 * This method print in console the time spent over the times added to be calculate.
+	 */
 	public void showTime() {
 		String log = "No time to show";
 		if (times.length == 2) {
