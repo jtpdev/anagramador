@@ -1,5 +1,7 @@
 package com.harbor.anagramador;
 
+import java.util.List;
+
 /**
  * @author Jimmy Porto
  *
@@ -13,6 +15,19 @@ public class Logger {
 	public Logger(Boolean doLog) {
 		super();
 		this.doLog = doLog;
+	}
+	
+	/**
+	 * This methods print in console the log that the developer want to print.
+	 * 
+	 * @param values
+	 */
+	public void show(List<Object> values) {
+		if (doLog) {
+			for (Object value : values) {
+				System.err.println("Log_" + System.currentTimeMillis() + ".:" + value);
+			}
+		}
 	}
 
 	/**
