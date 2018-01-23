@@ -75,5 +75,17 @@ public class Logger {
 		}
 		show(log);
 	}
+	
+	/**
+	 * This method print in console the time spent over the times added to be calculate.
+	 * And add a message to show with.
+	 */
+	public void showTime(String message) {
+		String log = "No time to show";
+		if (times.length == 2) {
+			log = "Time spent: " + (times[1] - times[0]) + "milliseconds.";
+		}
+		show(message + " - " + log);
+	}
 
 }
