@@ -50,8 +50,7 @@ public class Logger {
 	 * @param timeInMillis
 	 */
 	public void time() {
-		times[counter ? 0 : 1] = System.currentTimeMillis();
-		counter = !counter;
+		time(System.currentTimeMillis());
 	}
 	
 	/**
