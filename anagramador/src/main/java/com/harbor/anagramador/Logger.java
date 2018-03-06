@@ -25,7 +25,7 @@ public class Logger {
 	public void show(List<Object> values) {
 		if (doLog) {
 			for (Object value : values) {
-				System.err.println("Log_" + System.currentTimeMillis() + ".:" + value);
+				System.err.println("Log_" + System.nanoTime() + ".:" + value);
 			}
 		}
 	}
@@ -38,7 +38,7 @@ public class Logger {
 	public void show(String... values) {
 		if (doLog) {
 			for (String value : values) {
-				System.err.println("Log_" + System.currentTimeMillis() + ".:" + value);
+				System.err.println("Log_" + System.nanoTime() + ".:" + value);
 			}
 		}
 	}
