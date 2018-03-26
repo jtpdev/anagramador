@@ -1,5 +1,8 @@
 
 # Anagramador
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/837a975a802f4fc1920d6114a23b73b1)](https://www.codacy.com/app/jtpdev/anagramador?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jtpdev/anagramador&amp;utm_campaign=Badge_Grade)
+
 Algorithm in Java to create anagrams.
 
 It's so simple to use and understand.
